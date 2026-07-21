@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+		<title>NSC - Explore Artifacts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/bubble-chart.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+        
+        <div id="wrapper">
+
+            <header id="header">
+				<a href="index.html" class="logo">Explore Artifacts</a>
+			</header>
+
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="explore_artifacts.html">Explore Artifacts</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+
+            <div id="main">
+                <section>
+                    <!-- Default Description -->
+                    <div id="default-description">
+                        <p style="text-align: center; margin-bottom: 2rem; color: #7a7a7a;">
+                            <i>Select a view below to explore the artifacts organized by their creation timeline, intended audience, or format.</i>
+                        </p>
+                    </div>
+                    <ul class="actions">
+						<li><a href="#" id="timeline-view-btn" class="button">Timeline</a></li>
+						<li><a href="#" id="audience-view-btn" class="button">Audience</a></li>
+						<li><a href="#" id="form-view-btn" class="button">Form</a></li>
+					</ul>
+					
+                    <!-- View Titles -->
+                    <div id="form-title" style="display: none;">
+                        <h3 style="text-align: center;">Artifact Focus Affects Form</h3>
+                    </div>
+                    <div id="timeline-title" style="display: none;">
+                        <h3 style="text-align: center;">Chronological Timeline</h3>
+                    </div>
+
+					<div id="bubble-chart-container"></div>
+
+                    <!-- Form View Description (Combined Format/Focus) -->
+                    <div id="form-description" class="view-description" style="display: none;">
+                        <p>
+                            When comparing the form and focus of artifacts, we can see a positive correlation between how visual it is an its focus on human learning. Artifacts that are focused on human learning tend to take more illustrative and diverse froms whereas artifacts with a computational focus tend to be more textual or otherwise more informationally dense.
+                        </p>
+                    </div>
+
+                    <!-- Audience View Description -->
+                    <div id="audience-description" class="view-description" style="display: none;">
+                        <div class="row">
+                            <div class="col-6 col-12-small">
+                                <h3>General Audience</h3>
+                                <p>Communicating with a general audience requires transforming complex data into accessible, engaging narratives. This often involves using highly visual formats like infographics and physical exhibits. The goal is to capture attention and convey key messages without requiring prior expertise. Artifacts for this audience prioritize intuitive design, storytelling, and tactile interaction to make abstract concepts tangible and memorable. The variety in form, from animated videos to interactive museum pieces, reflects the need to meet the audience where they are and spark curiosity.</p>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <h3>Specialized Audience</h3>
+                                <p>When communicating with a specialized audience, the focus shifts from broad engagement to technical precision and depth. These artifacts, typically research papers and conference presentations, assume a shared foundation of knowledge. The priority is to clearly present methodology, data, and findings to facilitate expert scrutiny and contribute to the academic discourse. While clarity is still crucial, visualizations are often more data-dense, and the language is more technical, aiming for replicability and a detailed, nuanced discussion among peers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline View Description -->
+                    <div id="timeline-description" class="view-description" style="display: none;">
+                        <p>This view organizes the artifacts based on when they were created, illustrating the progression of my work and visualization techniques over time.</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://d3js.org/d3.v7.min.js"></script>
+			<script src="assets/js/bubble-chart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF9F6;
+    --ink:#22201B;
+    --ink-soft:#3A362E;
+    --muted:#756F63;
+    --faint:#9A9081;
+    --accent:#8C1515;
+    --hairline:#E8E2D6;
+    --measure:34rem;            /* ~560px, holds ~50–55 characters */
+    --serif:'Newsreader', Georgia, 'Times New Roman', serif;
+    --mono:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink-soft);
+    font-family:var(--serif);
+    font-size:18px;
+    line-height:1.7;
+    font-optical-sizing:auto;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--measure);margin:0 auto;padding:64px 24px 120px}
+
+  h1{font-size:36px;font-weight:500;color:var(--ink);margin:0;line-height:1.15;letter-spacing:-0.005em}
+  h2{font-size:24px;font-weight:500;color:var(--ink);margin:0 0 4px;line-height:1.2}
+  h3{font-size:17px;font-weight:500;color:var(--ink);margin:0}
+  p{margin:14px 0 0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+
+  .lede{font-size:18px;color:var(--ink-soft)}
+  .section{margin-top:56px;padding-top:40px;border-top:0.5px solid var(--hairline)}
+  .section:first-of-type{border-top:0;padding-top:0}
+  .label{font-size:14px;font-style:italic;color:var(--faint);margin:0 0 16px}
+  .note{font-size:15px;color:var(--muted);line-height:1.65}
+
+  /* type scale demo */
+  .scale-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-bottom:0.5px solid var(--hairline)}
+  .scale-row:last-child{border-bottom:0}
+  .scale-meta{font-family:var(--mono);font-size:12px;color:var(--faint);white-space:nowrap;text-align:right}
+
+  /* color swatches */
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-top:6px}
+  .swatch{border:0.5px solid var(--hairline);border-radius:10px;overflow:hidden;background:#fff}
+  .chip{height:64px}
+  .swatch .meta{padding:9px 11px}
+  .swatch .name{font-size:14px;color:var(--ink)}
+  .swatch .hex{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:1px}
+
+  /* generic demo frame */
+  .demo{border:0.5px solid var(--hairline);border-radius:12px;background:#fff;padding:22px 24px;margin-top:8px}
+  .demo + .note{margin-top:12px}
+
+  /* nav demos */
+  .navrow{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;color:var(--accent)}
+  .topbar{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-bottom:0.5px solid var(--hairline);padding-bottom:12px}
+  .wordmark{font-size:16px;font-weight:500;color:var(--ink)}
+
+  /* project rows */
+  .prow{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:7px 0}
+  .ptitle{font-weight:500;color:var(--ink)}
+  .psub{color:var(--muted)}
+  .pyear{font-size:14px;color:var(--faint);white-space:nowrap}
+  .more{font-size:15px;color:var(--accent);margin-top:10px}
+
+  /* IPA nameplate */
+  .ipa{font-size:17px;color:var(--faint);letter-spacing:.01em;margin:5px 0 0;font-style:normal;font-weight:400}
+
+  .spacer-demo{background:linear-gradient(90deg,var(--hairline),var(--hairline));height:1px}
+  .rhythm span{display:inline-block;font-family:var(--mono);font-size:12px;color:var(--muted);background:#fff;border:0.5px solid var(--hairline);border-radius:6px;padding:3px 8px;margin:4px 6px 0 0}
+
+  ul.plain{margin:12px 0 0;padding-left:20px}
+  ul.plain li{margin:6px 0}
+  code{font-family:var(--mono);font-size:0.9em;color:var(--ink);background:#fff;border:0.5px solid var(--hairline);border-radius:5px;padding:1px 5px}
+
+  .pages{border:0.5px solid var(--hairline);border-radius:12px;background:#fff;overflow:hidden;margin-top:8px}
+  .prow2{display:flex;gap:16px;padding:13px 18px;border-top:0.5px solid var(--hairline);align-items:baseline}
+  .prow2:first-child{border-top:0}
+  .prow2 .path{font-family:var(--mono);font-size:12px;color:var(--accent);min-width:130px}
+  .prow2 .desc{font-size:15px;color:var(--muted)}
+
+  @media (max-width:600px){
+    .wrap{padding:44px 20px 90px}
+    h1{font-size:30px}
+    .scale-meta{display:none}
+  }
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header>
+    <h1>Style guide</h1>
+    <p class="lede">The visual and editorial system for the personal site. One accent, warm near-black on cream, a single serif doing the work. When in doubt, remove something. This page is written in the system it describes.</p>
+  </header>
+
+  <!-- 1. TYPEFACE -->
+  <section class="section">
+    <p class="label">01 — Typeface</p>
+    <h2>Newsreader, throughout</h2>
+    <p class="note">A single serif for headings and body. It reads like an essay, which is the point: the site is mostly about explaining and writing. Weights are limited to <strong style="font-weight:500">regular (400)</strong> and <strong style="font-weight:500">medium (500)</strong> — never bolder. Italics are reserved for section labels and the occasional aside. A monospace stack (<code>ui-monospace</code>) is the only other face, used for hex values and code, never for prose.</p>
+  </section>
+
+  <!-- 2. TYPE SCALE -->
+  <section class="section">
+    <p class="label">02 — Type scale</p>
+    <div class="demo" style="padding:8px 24px">
+      <div class="scale-row"><span style="font-size:36px;font-weight:500;color:var(--ink);line-height:1.15">Ricky Rojas</span><span class="scale-meta">h1 · 36 / 500</span></div>
+      <div class="scale-row"><span style="font-size:17px;color:var(--faint);letter-spacing:.01em">/ˈrɪ.ki ˈro.xas/</span><span class="scale-meta">ipa · 17 / 400</span></div>
+      <div class="scale-row"><span style="font-size:24px;font-weight:500;color:var(--ink)">Page heading</span><span class="scale-meta">h2 · 24 / 500</span></div>
+      <div class="scale-row"><span style="font-size:17px;font-weight:500;color:var(--ink)">Project title</span><span class="scale-meta">17 / 500</span></div>
+      <div class="scale-row"><span style="font-size:18px;color:var(--ink-soft)">Body copy — the default reading size.</span><span class="scale-meta">body · 18 / 400</span></div>
+      <div class="scale-row"><span style="font-size:14px;font-style:italic;color:var(--faint)">Section label</span><span class="scale-meta">14 / italic</span></div>
+      <div class="scale-row"><span style="font-size:14px;color:var(--accent)">Navigation &amp; links</span><span class="scale-meta">14 / 400</span></div>
+      <div class="scale-row"><span style="font-family:var(--mono);font-size:12px;color:var(--muted)">Caption / meta / year</span><span class="scale-meta">12–14 / meta</span></div>
+    </div>
+    <p class="note">Body line-height is <strong style="font-weight:500">1.7</strong>; headings tighten to ~1.15–1.2. The IPA row is a fixed element that sits only beneath the name on the homepage — it is not a reusable text style for other content. Only the sizes above appear elsewhere on the site — resist adding a new one to solve a layout problem.</p>
+  </section>
+
+  <!-- 3. COLOR -->
+  <section class="section">
+    <p class="label">03 — Color</p>
+    <h2>Six values, one accent</h2>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#FBF9F6;border-bottom:0.5px solid var(--hairline)"></div><div class="meta"><div class="name">Paper</div><div class="hex">#FBF9F6</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#22201B"></div><div class="meta"><div class="name">Ink (primary)</div><div class="hex">#22201B</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#3A362E"></div><div class="meta"><div class="name">Ink soft (body)</div><div class="hex">#3A362E</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#756F63"></div><div class="meta"><div class="name">Muted</div><div class="hex">#756F63</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#9A9081"></div><div class="meta"><div class="name">Faint (labels)</div><div class="hex">#9A9081</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#8C1515"></div><div class="meta"><div class="name">Accent (links)</div><div class="hex">#8C1515</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#E8E2D6"></div><div class="meta"><div class="name">Hairline</div><div class="hex">#E8E2D6</div></div></div>
+    </div>
+    <p class="note">Never pure black on pure white — the warmth of the cream and the softened ink are most of why the site feels calm. The brick-red accent appears <em>only</em> on links and nav. If something needs a second color to be understood, the layout is doing too little work.</p>
+  </section>
+
+  <!-- 4. SPACING & MEASURE -->
+  <section class="section">
+    <p class="label">04 — Spacing &amp; measure</p>
+    <h2>Air is the layout</h2>
+    <p class="note">Content is centered in a single column capped at <code>34rem</code> (~560px), which holds roughly 50–55 characters per line — the width that makes sparse text read as composed rather than empty. Hold this measure on every page.</p>
+    <div class="rhythm" style="margin-top:14px">
+      <span>section gap · 56px</span><span>label → content · 16px</span><span>paragraph · 14px</span><span>row padding · 7px</span><span>page margin · 64px top</span>
+    </div>
+    <p class="note" style="margin-top:16px">Vertical rhythm is generous and regular. Sections are separated by a top hairline and the 56px gap; nothing is boxed or shadowed except, on this reference page, the demo frames.</p>
+  </section>
+
+  <!-- 5. NAVIGATION -->
+  <section class="section">
+    <p class="label">05 — Navigation</p>
+    <h2>Two placements</h2>
+    <p class="note">The homepage puts nav <strong style="font-weight:500">beneath the intro statement</strong>, so the name and the first-person line are read before anything else. Every interior page puts the same nav in a <strong style="font-weight:500">top bar</strong>, with the name as a small wordmark linking home.</p>
+
+    <p class="note" style="margin-top:22px;color:var(--ink)">Homepage — nav below the intro</p>
+    <div class="demo">
+      <div style="font-size:30px;font-weight:500;color:var(--ink);line-height:1.15">Ricky Rojas</div>
+      <div class="ipa">/ˈrɪ.ki ˈro.xas/</div>
+      <p style="margin:12px 0 0;color:var(--ink-soft)">I'm a researcher and educator working where science meets public understanding.</p>
+      <hr style="border:none;border-top:0.5px solid var(--hairline);margin:22px 0 0">
+      <div class="navrow" style="margin-top:22px;gap:10px"><span>About</span><span style="color:var(--faint)">·</span><span>Projects</span><span style="color:var(--faint)">·</span><span>Teaching</span><span style="color:var(--faint)">·</span><span>SciComm</span><span style="color:var(--faint)">·</span><span>CV</span></div>
+    </div>
+
+    <p class="note" style="margin-top:22px;color:var(--ink)">Interior page — nav in the top bar</p>
+    <div class="demo">
+      <div class="topbar"><span class="wordmark">Ricky Rojas</span><div class="navrow"><span>About</span><span>Projects</span><span>Teaching</span><span>SciComm</span><span>CV</span></div></div>
+      <h3 style="margin-top:18px">Projects</h3>
+      <p style="margin:8px 0 0;color:var(--muted);font-size:15px">Page content begins here.</p>
+    </div>
+    <p class="note">Order is fixed: <code>About · Projects · Teaching · SciComm · CV</code>. Links are plain accent text, no buttons, no underline until hover — regular weight, never bold; the accent color alone carries the emphasis. On mobile the top-bar nav wraps to a second line rather than collapsing into a menu. On the homepage only, entries are joined with a centered dot (<code>·</code> in <code>var(--faint)</code>) so the row reads as one feature line, preceded by a hairline divider under the intro paragraph; the interior top-bar nav stays plain-gapped, no dots.</p>
+  </section>
+
+  <!-- 6. COMPONENTS -->
+  <section class="section">
+    <p class="label">06 — Recurring elements</p>
+    <h2>The few pieces the site is built from</h2>
+
+    <h3 style="margin-top:26px">Intro statement</h3>
+    <p class="note">Two to three sentences, first person, present tense. The only place the site speaks directly. It states field, angle, and what you make — no title stacking, no buzzwords.</p>
+
+    <h3 style="margin-top:26px">IPA nameplate</h3>
+    <div class="demo">
+      <div style="font-size:30px;font-weight:500;color:var(--ink);line-height:1.15">Ricky Rojas</div>
+      <div class="ipa">/ˈrɪ.ki ˈro.xas/</div>
+    </div>
+    <p class="note">Sits directly beneath the <code>h1</code> on the homepage only — nowhere else. Uses the serif at 17px, weight 400, color <code>var(--faint)</code>, letter-spacing <code>.01em</code>. Not italic; IPA is a phonetic system, not emphasis. The transcription uses slashes (phonemic), not square brackets (phonetic). Do not add a label or explanation — the notation is self-evident to anyone who reads it, and pleasantly cryptic to anyone who doesn't.</p>
+
+    <h3 style="margin-top:26px">Teaser section</h3>
+    <div class="demo">
+      <p class="label" style="margin-bottom:12px">Teaching</p>
+      <p style="margin:0;color:var(--ink-soft);font-size:17px">Five years teaching undergraduate science writing and quantitative reasoning.</p>
+      <div class="more">See teaching →</div>
+    </div>
+    <p class="note">An italic label, one or two lines, and a single <code>→</code> link to the full page. This is the atom of the homepage.</p>
+
+    <h3 style="margin-top:26px">Project row</h3>
+    <div class="demo" style="padding:14px 24px">
+      <div class="prow"><div><span class="ptitle">Signal &amp; Noise</span><span class="psub"> — a field guide to reading data honestly</span></div><span class="pyear">2025</span></div>
+      <div class="prow"><div><span class="ptitle">Tidepool</span><span class="psub"> — interactive models for intro biology</span></div><span class="pyear">2024</span></div>
+    </div>
+    <p class="note">Title in medium, em-dash, one-line description in muted, year pinned right in the meta face. Three or four on the homepage; the rest live on the Projects page.</p>
+
+    <h3 style="margin-top:26px">SciComm handoff</h3>
+    <p class="note">SciComm is the one link that leaves this quiet world for the more visual portfolio (nested at <code>/scicomm</code>). Word it as an invitation — <em>“Visit the portfolio →”</em> — so the shift in look reads as intentional, not accidental.</p>
+
+    <h3 style="margin-top:26px">Footer</h3>
+    <div class="demo">
+      <div class="navrow" style="border-top:0.5px solid var(--hairline);padding-top:16px"><span>Email</span><span>GitHub</span><span>Bluesky</span><span>CV (PDF)</span></div>
+    </div>
+    <p class="note">A hairline, then plain accent links. CV appears here and in the nav on purpose — top and bottom cover both reading habits.</p>
+  </section>
+
+  <!-- 7. STRUCTURE -->
+  <section class="section">
+    <p class="label">07 — Pages &amp; structure</p>
+    <h2>One repo, six destinations</h2>
+    <div class="pages">
+      <div class="prow2"><span class="path">/</span><span class="desc">Homepage hub — name, intro, teaser sections, footer.</span></div>
+      <div class="prow2"><span class="path">/about</span><span class="desc">Background, current focus, and how to get in touch.</span></div>
+      <div class="prow2"><span class="path">/projects</span><span class="desc">Full list of work, newest first.</span></div>
+      <div class="prow2"><span class="path">/teaching</span><span class="desc">Courses, materials, and student work.</span></div>
+      <div class="prow2"><span class="path">/scicomm</span><span class="desc">The existing visual portfolio, nested in a subfolder.</span></div>
+      <div class="prow2"><span class="path">/cv</span><span class="desc">HTML CV page with a prominent “Download PDF” link.</span></div>
+    </div>
+    <p class="note">Everything ships from one GitHub Pages repo. Inside <code>/scicomm</code>, check that asset paths are relative so they resolve from the subfolder rather than the domain root.</p>
+  </section>
+
+  <!-- 8. VOICE -->
+  <section class="section">
+    <p class="label">08 — Voice</p>
+    <h2>How the words sound</h2>
+    <ul class="plain">
+      <li><strong style="font-weight:500">First person, plain.</strong> “I build tools and teach,” not “Ricky is a researcher specializing in…”.</li>
+      <li><strong style="font-weight:500">Specific over clever.</strong> Name the actual field and the actual thing you made.</li>
+      <li><strong style="font-weight:500">Sentence case everywhere</strong> — headings, labels, links.</li>
+      <li><strong style="font-weight:500">Let each line do one job.</strong> A label labels; a description describes; nothing does double duty.</li>
+      <li><strong style="font-weight:500">Cut one thing.</strong> Before a section ships, remove the least necessary sentence.</li>
+    </ul>
+  </section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,124 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,12pt]{fed-res} % See the fed-res.cls file to import packages and edit formatting/style
+\begin{document}
+%-------------------------------------------------------------------------------
+%	HEADING INFORMATION
+%-------------------------------------------------------------------------------
+\begin{center}
+    \textbf{\Huge \scshape Ernesto Rojas} \\ \vspace{3pt}
+    \textbf{\large Curriculum Vitae} \\ \vspace{5pt}
+     \href{mailto:rickyrojas311@gmail.com}{rickyrojas311@gmail.com} $|$ \ \href{https://www.linkedin.com/in/rickyrojas/}{LinkedIn} $|$ \ \href{https://github.com/rickyrojas311}{Github}\\ \vspace{1pt}
+     \vspace{-4pt}
+\end{center}
+\vspace{-12pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {B.S. with Honors in Data Science}{2022 -- 2026}
+
+      Subplan in Mathematical and Computational Science \\
+      Honors Concentration in Computational Neuroscience \\
+      Notation in Science Communication with Distinction (\href{https://rickyrojas311.github.io/nsc-portfolio/}{Portfolio})
+    \vspace{-19pt}
+    \resumeSubheading{}{}{M.S. in Statistics}{2025 -- 2026}
+  \resumeSubHeadingListEnd
+%-----------RESEARCH EXPERIENCES-----------
+\section{Research Experiences}
+  \resumeSubHeadingListStart
+    \resumeSubheadingWork
+      {Research Assistant under Prof. Laura Gwilliams}{June 2025 -- Present}
+      {Gwilliams Laboratory of Speech Neuroscience, Department of Psychology}{Stanford, CA}
+      {}{}
+    \resumeSubheadingWork
+      {Research Assistant under Prof. Russell Poldrack}{June 2024 -- September 2024}
+      {Department of Psychology}{Stanford, CA}
+      {}{}
+    \resumeSubheadingWork
+      {Research Assistant under Prof. Daniel Spielman}{June 2023 -- May 2024}
+      {Radiological Sciences Laboratory}{Stanford, CA}
+      {}{}
+  \resumeSubHeadingListEnd
+%-----------CONFERENCE PRESENTATIONS-----------
+\section{Conference Presentations}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Society for Neuroscience, Neuroscience 2026} $|$ \emph{Poster, In-Person} \textit{(Pending)}}{DC, 2026}
+
+      Abstract: Dynamics of Syntactic Resolution in the Inferior Frontal Gyrus During Natural Speech Comprehension
+    \resumeProjectHeading
+      {\textbf{International Society for Magnetic Resonance in Medicine, Annual Conference} $|$ \emph{Digital Poster, In-Person}}{Singapore, 2024}
+
+      Abstract: Evaluation of Anatomical Guided Reconstruction for Improving the Spatial Resolution of Deuterium Metabolic Imaging
+  \resumeSubHeadingListEnd
+%-----------GRANTS & AWARDS-----------
+\section{Grants \& Awards}
+  \textbf{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading{NSF GRFP Honorable Mention}{}{National Science Foundation}{}
+    \resumeSubheading{Award of Excellence}{}{Stanford Alumni Association}{}
+
+      Honors graduating seniors who have demonstrated a sincere commitment to the university through involvement, leadership, and extraordinary Stanford spirit
+    \resumeSubheading{Departmental Honors}{}{Department of Data Science, Stanford University}{}
+  \resumeSubHeadingListEnd
+  \vspace{5pt}
+  \textbf{Grants}
+  \resumeSubHeadingListStart
+    \resumeSubheading{TPDA --- \$1,000 \textit{(Pending)}}{}{Society for Neuroscience}{}
+    \resumeSubheading{Course Implementation Seed Grant --- \$25,000 \textit{(Pending)}}{}{AI in Teaching and Learning at Stanford}{}
+
+      Seed grant to reformulate the introductory data science course (DataSci 112: Principles of Data Science)
+    \resumeSubheading{Science Communication Grant}{}{}{}
+    \resumeSubheading{Major Grant --- \$9,500}{}{Stanford Vice Provost for Undergraduate Education}{}
+
+      Honors Thesis Funding
+    \resumeSubheading{Conference Travel Grant --- \$1,500}{}{Stanford Vice Provost for Undergraduate Education}{}
+
+      Travel to ISMRM
+    \resumeSubheading{ISMRM Educational Stipend --- Waived Fees (\$237) + \$300}{}{International Society for Magnetic Resonance in Medicine}{}
+    \resumeSubheading{Stats SURPS Research Stipend --- \$9,000}{}{Department of Statistics, Stanford University}{}
+    \resumeSubheading{RSL REU Stipend --- \$9,000}{}{Radiological Sciences Laboratory, Stanford University}{}
+  \resumeSubHeadingListEnd
+  \vspace{5pt}
+  \textbf{Total Amount Awarded: \$29,537}
+%-----------TEACHING AND ADVISING-----------
+\section{Teaching and Advising}
+  \resumeSubHeadingListStart
+    \resumeSubheadingWork
+      {Teaching Assistant}{Winter 2024, Summer 2024, Winter 2025, Winter 2026}
+      {Principles of Data Science}{Stanford, CA}
+      {}{}
+
+      Number of Students: 18--24
+    \resumeSubheadingWork
+      {Data Science Peer Advisor}{2025 -- 2026}
+      {Department of Data Science, Stanford University}{Stanford, CA}
+      {}{}
+  \resumeSubHeadingListEnd
+%-----------RELEVANT PROJECTS-----------
+\section{Relevant Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading %ML
+    {\textbf{\href{https://github.com/rickyrojas311/NeuralMovieCharacter}
+    {Neural Decoding Models}} $|$ \emph{Python, pandas, PyTorch}}{March 2025}
+
+    Trained and evaluated LSTM, RNN, and GRU architectures on a large-scale movie-watching neural dataset, achieving 80\% accuracy and exceeding the state-of-the-art. \\
+    Analyzed predictions to guide targeted architecture optimizations, improving model robustness.
+    \resumeProjectHeading %ML
+    {\textbf{\href{https://github.com/rickyrojas311/cs224rLLMNeuralDecoding}
+    {LLM Fine-Tuning with RL}} $|$ \emph{Python, pandas, PyTorch}}{May 2025}
+
+    Integrated an RNN-based neural decoder with a fine-tuned LLM, boosting decoding accuracy 23\% above baseline on held-out neural test sets. \\
+    Created synthetic chain-of-thought datasets and fine-tuned Llama~3.2 using SFT, DPO, and RLOO, enhancing reasoning quality and task-specific performance.
+    \resumeProjectHeading %Data Science
+          {\textbf{\href{https://github.com/rickyrojas311/PronounCoreference}
+          {Inferential Neural Statistics}} $|$ \emph{Python, pandas, scikit-learn, experimental design}}{May 2024}
+
+    Independently developed and conducted analyses to investigate linguistic processes using scikit-learn. \\
+    Utilized generalized linear models and advanced statistical testing to identify significant responses, distilling complex trends into a comprehensive report.
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
