@@ -187,11 +187,13 @@ img {
 }
 
 .project-row {
+  padding: 10px 0;
+}
+.project-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 16px;
-  padding: 7px 0;
 }
 .project-title {
   font-size: 17px;
@@ -201,8 +203,10 @@ img {
   align-items: center;
 }
 .project-desc {
+  display: block;
   font-size: 17px;
   color: var(--muted);
+  margin: 4px 0 0;
 }
 .project-year {
   font-size: 14px;
