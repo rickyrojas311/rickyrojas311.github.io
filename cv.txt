@@ -16,74 +16,92 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+   \resumeSubheading{Stanford University}{Stanford, CA}{M.S. in Statistics}{2025 -- 2026}
+   \vspace{-20pt}
     \resumeSubheading
-      {Stanford University}{Stanford, CA}
+      {}{}
       {B.S. with Honors in Data Science}{2022 -- 2026}
-
-      Subplan in Mathematical and Computational Science \\
-      Honors Concentration in Computational Neuroscience \\
-      Notation in Science Communication with Distinction (\href{https://rickyrojas311.github.io/nsc-portfolio/}{Portfolio})
-    \vspace{-19pt}
-    \resumeSubheading{}{}{M.S. in Statistics}{2025 -- 2026}
+      \resumeItemListStart
+        \resumeItem{Subplan in Mathematical and Computational Science}
+        \resumeItem{Honors Concentration in Computational Neuroscience}
+        \resumeItem{Notation in Science Communication with Distinction (\href{https://rickyrojas311.github.io/nsc-portfolio/}{Portfolio})}
+      \resumeItemListEnd
+   
   \resumeSubHeadingListEnd
 %-----------RESEARCH EXPERIENCES-----------
 \section{Research Experiences}
   \resumeSubHeadingListStart
     \resumeSubheadingWork
       {Research Assistant under Prof. Laura Gwilliams}{June 2025 -- Present}
-      {Gwilliams Laboratory of Speech Neuroscience, Department of Psychology}{Stanford, CA}
+      {Gwilliams Laboratory of Speech Neuroscience}{Stanford}
       {}{}
+      \resumeItemListStart
+        \resumeItem{Designed and wrote proposal for independent project to utilize the shared specialization between LLM embeddings and the brain during natural language processing to understand specific neural processes.}
+        \resumeItem{Applied and received internal grant funding for project, presented results at regional and national conferences.}
+      \resumeItemListEnd
     \resumeSubheadingWork
       {Research Assistant under Prof. Russell Poldrack}{June 2024 -- September 2024}
-      {Department of Psychology}{Stanford, CA}
+      {Department of Psychology and Statistics}{Stanford}
       {}{}
+      \resumeItemListStart
+        \resumeItem{Evaluated statistical methods on removing motor artifacts from button pressing during fMRI tasks.}
+        \resumeItem{Replicated study on resting-state fMRI functional connectivity predictability to movie-watching fMRI data.}
+      \resumeItemListEnd
     \resumeSubheadingWork
       {Research Assistant under Prof. Daniel Spielman}{June 2023 -- May 2024}
-      {Radiological Sciences Laboratory}{Stanford, CA}
+      {Radiological Sciences Laboratory}{Stanford}
       {}{}
+      \resumeItemListStart
+        \resumeItem{Implemented structure-guided total variation regularized image reconstruction with fast gradient projection for deuterium metabolic imaging scan enhancement.}
+        \resumeItem{Presented results at international radiology conference.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 %-----------CONFERENCE PRESENTATIONS-----------
 \section{Conference Presentations}
   \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Society for Neuroscience, Neuroscience 2026} $|$ \emph{Poster, In-Person} \textit{(Pending)}}{DC, 2026}
-
-      Abstract: Dynamics of Syntactic Resolution in the Inferior Frontal Gyrus During Natural Speech Comprehension
-    \resumeProjectHeading
-      {\textbf{International Society for Magnetic Resonance in Medicine, Annual Conference} $|$ \emph{Digital Poster, In-Person}}{Singapore, 2024}
-
-      Abstract: Evaluation of Anatomical Guided Reconstruction for Improving the Spatial Resolution of Deuterium Metabolic Imaging
+    \resumeSubheading
+      {Neuroscience 2026, Society for Neuroscience}{}
+      {Poster, In-Person}{DC, 2026}
+      \resumeItemListStart
+        \resumeItem{Dynamics of Syntactic Resolution in the Inferior Frontal Gyrus During Natural Speech Comprehension}
+      \resumeItemListEnd
+      \resumeSubheading{AI+Science: Accelerating Discovery Conference, Stanford HAI and Data Science}{}{Poster, In-Person}{Stanford, 2026}
+      \resumeItemListStart
+        \resumeItem{Attention-Guided Encoding Models Uncover Syntactic Computations During Natural Speech Comprehension}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Annual Meeting, International Society for Magnetic Resonance in Medicine}{}
+      {Digital Poster, In-Person}{Singapore, 2024}
+      \resumeItemListStart
+        \resumeItem{\href{https://archive.ismrm.org/2024/3055.html}{Evaluation of Anatomical Guided Reconstruction for Improving the Spatial Resolution of Deuterium Metabolic Imaging}}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 %-----------GRANTS & AWARDS-----------
 \section{Grants \& Awards}
   \textbf{Awards}
   \resumeSubHeadingListStart
     \resumeSubheading{NSF GRFP Honorable Mention}{}{National Science Foundation}{}
-    \resumeSubheading{Award of Excellence}{}{Stanford Alumni Association}{}
-
-      Honors graduating seniors who have demonstrated a sincere commitment to the university through involvement, leadership, and extraordinary Stanford spirit
     \resumeSubheading{Departmental Honors}{}{Department of Data Science, Stanford University}{}
+    \resumeSubheading{Award of Excellence}{}{Stanford Alumni Association}{}
+      \resumeItemListStart
+        \resumeItem{Honors graduating seniors who have demonstrated a sincere commitment to the university through involvement, leadership, and extraordinary Stanford spirit.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
   \vspace{5pt}
   \textbf{Grants}
   \resumeSubHeadingListStart
-    \resumeSubheading{TPDA --- \$1,000 \textit{(Pending)}}{}{Society for Neuroscience}{}
-    \resumeSubheading{Course Implementation Seed Grant --- \$25,000 \textit{(Pending)}}{}{AI in Teaching and Learning at Stanford}{}
-
-      Seed grant to reformulate the introductory data science course (DataSci 112: Principles of Data Science)
-    \resumeSubheading{Science Communication Grant}{}{}{}
-    \resumeSubheading{Major Grant --- \$9,500}{}{Stanford Vice Provost for Undergraduate Education}{}
-
-      Honors Thesis Funding
-    \resumeSubheading{Conference Travel Grant --- \$1,500}{}{Stanford Vice Provost for Undergraduate Education}{}
-
-      Travel to ISMRM
-    \resumeSubheading{ISMRM Educational Stipend --- Waived Fees (\$237) + \$300}{}{International Society for Magnetic Resonance in Medicine}{}
-    \resumeSubheading{Stats SURPS Research Stipend --- \$9,000}{}{Department of Statistics, Stanford University}{}
-    \resumeSubheading{RSL REU Stipend --- \$9,000}{}{Radiological Sciences Laboratory, Stanford University}{}
+    \resumeSubheading{Trainee Professional Development Award --- \$1,000 \textit{(Pending)}}{2026}{Society for Neuroscience}{}
+    \resumeSubheading{Major Grant --- \$9,500}{2025}{Stanford Vice Provost for Undergraduate Education}{}
+      \resumeItemListStart
+        \resumeItem{Major Grants support student-proposed, full-time research projects supported by a faculty mentor.}
+      \resumeItemListEnd
+    \resumeSubheading{Conference Travel Grant --- \$1,500}{2024}{Stanford Vice Provost for Undergraduate Education}{}
+    \resumeSubheading{ISMRM Educational Stipend --- Waived Fees (\$237) + \$300}{2024}{International Society for Magnetic Resonance in Medicine}{}
+    \resumeSubheading{Summer Undergraduate Research Program Stipend --- \$9,000}{2024}{Department of Statistics, Stanford University}{}
+    \resumeSubheading{Research Experience for Undergraduates Program Stipend --- \$9,000}{2023}{Radiological Sciences Laboratory, Stanford University}{}
   \resumeSubHeadingListEnd
   \vspace{5pt}
-  \textbf{Total Amount Awarded: \$29,537}
+  \textbf{Total Amount Awarded: \$29,300}
 %-----------TEACHING AND ADVISING-----------
 \section{Teaching and Advising}
   \resumeSubHeadingListStart
@@ -91,34 +109,41 @@
       {Teaching Assistant}{Winter 2024, Summer 2024, Winter 2025, Winter 2026}
       {Principles of Data Science}{Stanford, CA}
       {}{}
-
-      Number of Students: 18--24
+      \resumeItemListStart
+        \resumeItem{Led section for 18--24 students twice a week teaching fundamental data science skills. Organized and held weekly 3-hour long office hours for "Data Science Nights". Created review materials and held review sessions before exams. Redesigned assignments to integrate data storytelling content.}
+      \resumeItemListEnd
     \resumeSubheadingWork
       {Data Science Peer Advisor}{2025 -- 2026}
       {Department of Data Science, Stanford University}{Stanford, CA}
       {}{}
+      \resumeItemListStart
+      \resumeItem{Held weekly office hours to advise prospective data science students on course selection and other questions related to the major. Organized community events and held talks on applying data science to research.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 %-----------RELEVANT PROJECTS-----------
 \section{Relevant Projects}
     \resumeSubHeadingListStart
     \resumeProjectHeading %ML
     {\textbf{\href{https://github.com/rickyrojas311/NeuralMovieCharacter}
-    {Neural Decoding Models}} $|$ \emph{Python, pandas, PyTorch}}{March 2025}
-
-    Trained and evaluated LSTM, RNN, and GRU architectures on a large-scale movie-watching neural dataset, achieving 80\% accuracy and exceeding the state-of-the-art. \\
-    Analyzed predictions to guide targeted architecture optimizations, improving model robustness.
+    {Deep Learning Decoding Models for Active Speaker Recognition during Movie-watching}}}{March 2025}
+    \resumeItemListStart
+        \resumeItem{Trained and evaluated LSTM, RNN, and GRU architectures on a large-scale movie-watching neural dataset to classify current speaker, achieving 80\% accuracy and exceeding the state-of-the-art results.}
+        \resumeItem{Analyzed predictions to guide targeted architecture optimizations, improving model robustness.}
+    \resumeItemListEnd
     \resumeProjectHeading %ML
     {\textbf{\href{https://github.com/rickyrojas311/cs224rLLMNeuralDecoding}
-    {LLM Fine-Tuning with RL}} $|$ \emph{Python, pandas, PyTorch}}{May 2025}
-
-    Integrated an RNN-based neural decoder with a fine-tuned LLM, boosting decoding accuracy 23\% above baseline on held-out neural test sets. \\
-    Created synthetic chain-of-thought datasets and fine-tuned Llama~3.2 using SFT, DPO, and RLOO, enhancing reasoning quality and task-specific performance.
+    {Boosting Neural Decoders with RL Fine-Tuned LLMs during Natural Speech Comprehension}}}{May 2025}
+    \resumeItemListStart
+        \resumeItem{Integrated an RNN-based neural decoder with a fine-tuned LLM, boosting decoding accuracy 23\% above baseline on held-out neural test sets.}
+        \resumeItem{Created synthetic chain-of-thought datasets and fine-tuned Llama~3.2 using SFT, DPO, and RLOO, enhancing reasoning quality and task-specific performance.}
+    \resumeItemListEnd
     \resumeProjectHeading %Data Science
-          {\textbf{\href{https://github.com/rickyrojas311/PronounCoreference}
-          {Inferential Neural Statistics}} $|$ \emph{Python, pandas, scikit-learn, experimental design}}{May 2024}
-
-    Independently developed and conducted analyses to investigate linguistic processes using scikit-learn. \\
-    Utilized generalized linear models and advanced statistical testing to identify significant responses, distilling complex trends into a comprehensive report.
+          {\textbf{\href{https://github.com/rickyrojas311/realtimeElectionForecasting}
+          {Hierarchical Bayesian Models for Real-Time Election Calling}}}{May 2026}
+    \resumeItemListStart
+        \resumeItem{Designed, built, and evaluated hierarchical Bayesian models to quantify uncertainty around California congressional races during the 2024 midterm election.}
+        \resumeItem{Investigated and corrected sources of systemic bias and validated confidence bands for accurate quantification.}
+    \resumeItemListEnd
     \resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}

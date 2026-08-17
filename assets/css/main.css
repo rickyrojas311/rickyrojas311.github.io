@@ -197,6 +197,8 @@ img {
   font-size: 17px;
   font-weight: 500;
   color: var(--ink);
+  display: inline-flex;
+  align-items: center;
 }
 .project-desc {
   font-size: 17px;
@@ -207,6 +209,27 @@ img {
   color: var(--faint);
   font-family: var(--mono);
   white-space: nowrap;
+}
+.star-mark {
+  width: 20px;
+  height: 20px;
+  margin-left: -34px;
+  margin-right: 10px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.star-mark--legend {
+  width: 14px;
+  height: 14px;
+  margin: 0 1px;
+  vertical-align: -2px;
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .star-mark {
+    margin-left: 0;
+  }
 }
 
 .teaser p {
@@ -270,6 +293,15 @@ img {
   margin: 4px 0 0;
   font-size: 15px;
   color: var(--muted);
+}
+.cv-detail ul {
+  margin: 4px 0 0;
+  padding-left: 1.1em;
+}
+.cv-detail li {
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: 2px;
 }
 
 /* ---- utilities ---- */
